@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 80vw;
+            height: 60vh;
+            /* border: 1px solid black; */
+            margin: auto;
+            margin-top: 20vh;
+            display: flex;
+            flex-wrap: wrap;
+            overflow: hidden;
+        }
+
+        .box2 {
+            width: 36vw;
+            height: 16vh;
+            /* border: 1px solid black; */
+            background-color: aqua;
+            /* margin: auto; */
+            margin-top: 8vh;
+            font-size: 17vw;
+            /* justify-content: center; */
+            /* text-align: center; */
+            background-color: transparent;
+
+        }
+
+        .box1 {
+            width: 16vw;
+            height: 16vh;
+            /* border: 1px solid black; */
+            margin-left: 8vw;
+            margin-top: 8vh;
+            font-size: 17vw;
+            /* justify-content: center; */
+            text-align: right;
+            animation-name: pritam1;
+            animation-timing-function: ease-in-out;
+            animation-duration: 10s;
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            background-color: aqua;
+
+        }
+
+        .box3 {
+            width: 16vw;
+            height: 16vh;
+            /* border: 1px solid black; */
+            margin-left: 8vw;
+            font-size: 17vw ;
+            text-align: right;
+            opacity: 0;
+            animation-name: pritam2;
+            animation-duration: 10s;
+            animation-delay: 6s;
+            animation-timing-function: ease-in-out;
+            animation-iteration-count: 1;
+            animation-direction: normal;
+            animation-fill-mode: forwards;
+            background-color: yellow;
+            color: red;
+        }
+
+        @keyframes pritam1 {
+            0% {}
+         
+            30% {
+                transform: rotate(90deg);
+            }
+
+            40% {
+                transform: rotate(180deg);
+            }
+
+            50% {
+                transform: rotate(270deg);
+            }
+
+            60% {
+                transform: rotate(360deg);
+            }
+
+            75% {
+                transform: translateY(-5vh);
+            }
+
+            100% {
+                transform: translatey(-30vh);
+
+            }
+
+
+
+        }
+
+        @keyframes pritam2 {
+            0% {
+                opacity: 0;
+            }
+             20%{
+            transform: rotate(120deg);
+          }
+           30%{
+            transform: rotate(240deg);
+          }
+           40%{
+            transform: rotate(360deg);
+          }
+
+            45% {
+                transform: translatey(-8vh);
+                opacity: 0.5;
+            }
+
+            75% {
+                transform: translateY(-16vh);
+                opacity: 0.9;
+            }
+
+            100% {
+                transform: translatey(-26vh);
+                opacity: 1;
+                background-color: aqua;
+                color: black;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">Z</div>
+        <div class="box2">ERO</div>
+        <div class="box3">H</div>
+    </div>
+</body>
+
+</html>
